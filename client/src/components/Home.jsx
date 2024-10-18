@@ -8,7 +8,7 @@ function Home() {
 
   const handleLogout = async () => {
     try {
-      await axios.get("http://localhost:5050/api/logout", {
+      await axios.get("https://testing-a5e3.onrender.com/api/logout", {
         withCredentials: true,
       });
       setIsAuthenticated(false);
